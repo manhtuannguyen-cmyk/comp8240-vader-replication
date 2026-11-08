@@ -1,0 +1,8 @@
+name: comp8240-vader-replication
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14.5
+  - pip
+  - pip:
+      - -r requirements.txt

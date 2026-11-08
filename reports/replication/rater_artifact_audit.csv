@@ -1,0 +1,5 @@
+dataset,text_rows,rater_rows,matched_ids,ground_truth_mean_mismatches,list_mean_mismatches,minimum_raters,maximum_raters
+Tweets,4200,4200,4200,199,0,20,99
+Movie,10605,10605,10605,0,0,15,29
+Amazon,3708,3708,3707,0,0,20,20
+NYT,5190,5190,5190,0,0,20,20

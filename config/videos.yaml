@@ -1,0 +1,35 @@
+videos:
+- folder: video_01_comedy
+  video_id: XLabFiVil58
+  expected_title: We Pitched Offensive Video Games To Strangers
+  expected_channel: Family Friendly
+  expected_date: null
+  research_category: Comedy and Entertainment
+  selection_rationale: Preselected by researcher for humour, sarcasm and informal
+    reactions; not established as most viewed.
+- folder: video_02_gaming
+  video_id: bHxLy6Qza3M
+  expected_title: '10,000 Player Minecraft War: Nether VS Overworld'
+  expected_channel: Parrot
+  expected_date: null
+  research_category: Gaming and Streaming
+  selection_rationale: Preselected by researcher for gaming slang and emotional reactions;
+    not established as most viewed.
+- folder: video_03_lifestyle
+  video_id: Q-7yjWQ11kQ
+  expected_title: 'vlog: day in the life'
+  expected_channel: Kylie Jenner
+  expected_handle: '@kyliejenner'
+  expected_date: '2026-10-03'
+  research_category: Lifestyle and Vlogs
+  selection_rationale: Researcher explicitly approved this exact official-channel
+    upload and correction of the originally supplied title; date and lifestyle category
+    retained.
+- folder: video_04_pop_culture
+  video_id: uiPMONFMbrg
+  expected_title: Trying Unpopular Social Medias
+  expected_channel: Danny Gonzalez
+  expected_date: '2025-11-14'
+  research_category: Pop Culture and Internet Commentary
+  selection_rationale: Preselected by researcher for internet culture, criticism and
+    humour; not established as most viewed.

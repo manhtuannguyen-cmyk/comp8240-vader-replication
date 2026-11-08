@@ -1,0 +1,17 @@
+{
+  "raw_records": 54263,
+  "retained": 45258,
+  "excluded": 9005,
+  "retained_classes": {
+    "neutral": 16021,
+    "negative": 10217,
+    "positive": 19020
+  },
+  "exclusion_primary_reasons": {
+    "ambiguous_emotion_present": 6668,
+    "neutral_with_other_emotion": 1345,
+    "mixed_positive_negative": 992
+  },
+  "verified_against_supplied_processed_file": true,
+  "processed_files_rebuilt": false
+}

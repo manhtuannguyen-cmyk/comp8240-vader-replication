@@ -1,0 +1,467 @@
+{
+  "snapshot": "2026-11-05",
+  "files": [
+    {
+      "path": "data/goemotions/raw/README.md",
+      "sha256": "c882c69be9f400129bce8535319606434481a085be9c20263930670890e171a7",
+      "bytes": 7968,
+      "private": false
+    },
+    {
+      "path": "data/goemotions/raw/dev.tsv",
+      "sha256": "575489c079c9de1097062a01738f998590d6b7ead66dd1c9fd1d2ba01fd8bc62",
+      "bytes": 439059,
+      "private": false
+    },
+    {
+      "path": "data/goemotions/raw/emotions.txt",
+      "sha256": "45c3ef86782d2a4d7fedcd6d8c111aa0d0e94720689bd164fac94fefb4495a89",
+      "bytes": 248,
+      "private": false
+    },
+    {
+      "path": "data/goemotions/raw/sentiment_mapping.json",
+      "sha256": "801f6f028082141bd38541a4b14d65b33bdc55d29c7b2aaa029fefecf206f76b",
+      "bytes": 367,
+      "private": false
+    },
+    {
+      "path": "data/goemotions/raw/test.tsv",
+      "sha256": "0587b2dd8b27b97352adbfc3fb083d46005c8946657fdc2b1ca8b1cc7f1f8be4",
+      "bytes": 436706,
+      "private": false
+    },
+    {
+      "path": "data/goemotions/raw/train.tsv",
+      "sha256": "1c254a142be5c00e80d819b9ae1bbd36d94b2eeb8f4b1271846508d57e57d9c5",
+      "bytes": 3519053,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/LICENSE.txt",
+      "sha256": "b78925304c567623f14677bad66b8e305e7ddcaf7982c8d8411ce51c55a8bf51",
+      "bytes": 1076,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/README.rst",
+      "sha256": "c475c0cdf28d8883041fc9081d1fb82e08cb508a269139f20dd533c66f58dd02",
+      "bytes": 23185,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/_README_.txt",
+      "sha256": "583d6381c04a4b342ac6e7268066128467785f1f4801c4f7d44afb1ccbaad939",
+      "bytes": 12408,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/amazonReviewSnippets_GroundTruth.txt",
+      "sha256": "11a9807a0974a2506a2d3b4851eaf69b3d6d20688ce4923adda2312a4f6dd6c2",
+      "bytes": 373157,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/amazonReviewSnippets_anonDataRatings.txt",
+      "sha256": "d7d909adab91e0b4d5084251fc825f15baff66277c52eaa705b40fc464fa274b",
+      "bytes": 322811,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/movieReviewSnippets_GroundTruth.txt",
+      "sha256": "c8293b0d942e90e223ea2c0955d969040d1a1be514a978b9af0698940bd13350",
+      "bytes": 1383098,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/movieReviewSnippets_anonDataRatings.txt",
+      "sha256": "658a086bc7239b98b750baa232cab80e6447789020f96a6c847cc1248d7c82f4",
+      "bytes": 954033,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/nytEditorialSnippets_GroundTruth.txt",
+      "sha256": "7d8fbcce7dde5d716da53e78f4ef4be6b706e9ef1e1d51887e6d0ad4b69cc27e",
+      "bytes": 607629,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/nytEditorialSnippets_anonDataRatings.txt",
+      "sha256": "803c87c5bb529334bb5ed5fca244aa935e5f342bc0a930d91a0f22e978ee39f2",
+      "bytes": 450054,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/tweets_GroundTruth.txt",
+      "sha256": "dfbe7102e2f92579ed8b19df9a3822491880697c67adf712fb66e520cc05102f",
+      "bytes": 389886,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/tweets_anonDataRatings.txt",
+      "sha256": "390d6f8f1b5c7e6f9f94ad7fea1e461ed718312d1856ae71c5812ab8ae943fa6",
+      "bytes": 616147,
+      "private": false
+    },
+    {
+      "path": "data/original_vader/vader_sentiment_lexicon.txt",
+      "sha256": "88645aa949987662301d41a3f26b950f41b239a4de4e0d4aee84857bf242e35d",
+      "bytes": 434145,
+      "private": false
+    },
+    {
+      "path": "data/youtube/annotations/annotator_1_annotations.csv",
+      "sha256": "94e81d439f27a37080fdc7c1ed4326ef154b35b47f2639f44c7e8ebba143bcb2",
+      "bytes": 51093,
+      "private": true
+    },
+    {
+      "path": "data/youtube/annotations/annotator_2_annotations.csv",
+      "sha256": "30a674e15be1a3e62e74d7a5ebc3efefad5cefcf621c4e9ca7edfa13ffb08e64",
+      "bytes": 51094,
+      "private": true
+    },
+    {
+      "path": "data/youtube/annotations/combined_human_annotations.csv",
+      "sha256": "3933e28806011c142c5829d3d912c1562feaa97408f684c419d5391aeea8b97c",
+      "bytes": 58007,
+      "private": true
+    },
+    {
+      "path": "data/youtube/excluded/video_01_comedy/youtube_comments_excluded.csv",
+      "sha256": "713780570130bef974aa7f1f165a38d1ca8c3b2c07cf71b55ca491027a072dc6",
+      "bytes": 1108,
+      "private": true
+    },
+    {
+      "path": "data/youtube/excluded/video_02_gaming/youtube_comments_excluded.csv",
+      "sha256": "145f48b704be39340fbb89def9b934896ddc5848c46ff67fcb566ae1c5892480",
+      "bytes": 3271,
+      "private": true
+    },
+    {
+      "path": "data/youtube/excluded/video_03_lifestyle/youtube_comments_excluded.csv",
+      "sha256": "9b1b7102cef94e59221414a0bddad0c4396879a114ed25a085e84a0e111a612d",
+      "bytes": 38257,
+      "private": true
+    },
+    {
+      "path": "data/youtube/excluded/video_04_pop_culture/youtube_comments_excluded.csv",
+      "sha256": "e3b51bc3c799b5289bc5bdd8e80abe65d295f14cdbe69a74dbcc3473f3c96639",
+      "bytes": 4539,
+      "private": true
+    },
+    {
+      "path": "data/youtube/llm/historical_outputs/chatgpt_saved_prediction_objects.json",
+      "sha256": "52fa326968d975fe4b41523d996968494636c0da737f5901d9ff6091e85e2afd",
+      "bytes": 50490,
+      "private": true
+    },
+    {
+      "path": "data/youtube/llm/predictions/chatgpt.csv",
+      "sha256": "5043b0c11aeec2057e729ad095e4e82646f4ea88bbf25bd2e3da1129904f86fa",
+      "bytes": 23021,
+      "private": true
+    },
+    {
+      "path": "data/youtube/llm/predictions/claude.csv",
+      "sha256": "488634261a6666d1c499bd34faee3e7d80a8b309a1000b375b286cbc94f9c7a3",
+      "bytes": 17758,
+      "private": true
+    },
+    {
+      "path": "data/youtube/llm/predictions/gemini.csv",
+      "sha256": "b0fb80fcedb357dfb06cba115c6d3bee2429d663687ea369beea0ed20466437f",
+      "bytes": 22368,
+      "private": true
+    },
+    {
+      "path": "data/youtube/metadata/youtube_final_sampling_report.md",
+      "sha256": "e7fab5aaf9df8b6db5f55449e8061e54f2c90153f5822e4f6df3d13e93cd0b0d",
+      "bytes": 4115,
+      "private": true
+    },
+    {
+      "path": "data/youtube/metadata/youtube_final_sampling_validation.json",
+      "sha256": "35dcdf1446de1f0810f1550ec20ea5e805265ae334151186e7fb0304829be8a7",
+      "bytes": 4762,
+      "private": true
+    },
+    {
+      "path": "data/youtube/metadata/youtube_preprocessing_summary.json",
+      "sha256": "34144162ab00d0e59e245ebb098b5aeed076c4af57e6b8794172e3599c2be553",
+      "bytes": 9590,
+      "private": true
+    },
+    {
+      "path": "data/youtube/metadata/youtube_sampling_log.csv",
+      "sha256": "c44a416795c59b6b79b7658f501913e5c77aa6b672fbf19a68ce347101b162d4",
+      "bytes": 38470,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_01_comedy/youtube_comments_cleaned.csv",
+      "sha256": "4a376c2c4a0dff04f89979e2efabeb96de75fa76a88e3879c4aa012a32c9ee86",
+      "bytes": 275690,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_01_comedy/youtube_comments_review_required.csv",
+      "sha256": "60c46be3bcb907c001deed0d830349ba85358ecabc64b21200aaa126bd22b704",
+      "bytes": 133753,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_02_gaming/youtube_comments_cleaned.csv",
+      "sha256": "fe0cb805162a0c0cb25728ae5084c851e98b932de2c27b53c7828b48dfeeee38",
+      "bytes": 242842,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_02_gaming/youtube_comments_review_required.csv",
+      "sha256": "41d5515fc3fa5d91e2c229d29219baf78d6a8a57a833fdf2fcadd7923a74b3e8",
+      "bytes": 153380,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_03_lifestyle/youtube_comments_cleaned.csv",
+      "sha256": "1f49ec5bdbcd413e5f612937033d0e8baf7a97f77885e9e6bb6188f98b7092ab",
+      "bytes": 205608,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_03_lifestyle/youtube_comments_review_required.csv",
+      "sha256": "66dc8dbef5c990470313f717ec300db08ad2890cf189d5ab267172859ef91268",
+      "bytes": 156330,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_04_pop_culture/youtube_comments_cleaned.csv",
+      "sha256": "e207747d4f675dff08aaff6914a09f097a2ace99161c164aec96d7e91fc07aec",
+      "bytes": 253301,
+      "private": true
+    },
+    {
+      "path": "data/youtube/processed/video_04_pop_culture/youtube_comments_review_required.csv",
+      "sha256": "c0bff99b775b38a49e7e7017363bfde8bedefafde8d4c42210be6f721d87fc59",
+      "bytes": 153431,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/collection_manifest.json",
+      "sha256": "4a3bdc119d41b74c874889a02fdc68798a48fcf09f8b44ee8daa3627284144ca",
+      "bytes": 702,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/comments_eligible.csv",
+      "sha256": "72f7efd63adac5bceec2f1f4f9e8b7c065f0ecd8888a734f78fab29c8cd3a620",
+      "bytes": 135290,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/comments_excluded.csv",
+      "sha256": "16203347bbd91c918c3938bd0014772cb19cd6ec71cf861ca9993b604a227bab",
+      "bytes": 662,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/comments_retrieved.csv",
+      "sha256": "8ab61025d2d67583e32548b8f66c2ca8df6fb5584df315c6bd42f55620f8fd69",
+      "bytes": 189163,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/comments_review.csv",
+      "sha256": "dad12e11a6d7ec180c9724e8c10aa97238edb84165c6867b454ee0bd0e836515",
+      "bytes": 35246,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/eligibility_audit.csv",
+      "sha256": "085475b90aebc88a49f0f8008682b72ea922c0808f34bd07ea166a3d4bbdabd6",
+      "bytes": 82391,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/eligibility_manifest.json",
+      "sha256": "b7cea25f26188051e8af647b3386d0e28088b0bcec8a722b5941fc611bff12b5",
+      "bytes": 337,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_01_comedy/video_metadata.json",
+      "sha256": "7ffb1d75295616a599b4516e2b9faca99792ec2204ed90e83ab37d4cab744b6a",
+      "bytes": 1417,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/collection_manifest.json",
+      "sha256": "e7f1a96aae3d32193e1693efbab04cfec7e49e4f4efd29e7727ef55d8942d2e5",
+      "bytes": 702,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/comments_eligible.csv",
+      "sha256": "bd8fbd5e90801a74caedeb4146bc4ad198a17b5303aaa397b119b3230fd4875f",
+      "bytes": 115812,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/comments_excluded.csv",
+      "sha256": "bc22ed7173da9313673cfeb2994cf3956697b9a02794f03ffb84077c778f705f",
+      "bytes": 898,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/comments_retrieved.csv",
+      "sha256": "1cee5bb6a6089bc88a101f1b23a98d3ee4b320486a79363798da1d6290aef537",
+      "bytes": 175132,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/comments_review.csv",
+      "sha256": "1461d04b0a678fc2581abd91100a1c83caf52af3c2a3112ca7731f151ff31790",
+      "bytes": 37494,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/eligibility_audit.csv",
+      "sha256": "06a3b28c087fd09bd8c35253a9780a7a1c79b55dae986c7e7f44cc0d53d8e1e0",
+      "bytes": 82512,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/eligibility_manifest.json",
+      "sha256": "df9ef38004f592dc0cc0fe7332e756ac3a093f154b7b014f70b3f1caa224c62a",
+      "bytes": 337,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_02_gaming/video_metadata.json",
+      "sha256": "91627742a9945ddc59c717270d7827dff0e72e0501e8d199dbdc0c4a23b80b2d",
+      "bytes": 1396,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/collection_manifest.json",
+      "sha256": "fca6097cfcd8147963ee51b63ecf19e32d011d4a89522dfd42eb59b0edbadb03",
+      "bytes": 702,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/comments_eligible.csv",
+      "sha256": "1778297c7263b38ce65e80a4e34f143366605cb5e451fa82d10f6a719404eef2",
+      "bytes": 106598,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/comments_excluded.csv",
+      "sha256": "81d315c5318191087489cd7d6f0828a53c17a71144d31cbd3521512330fb16a6",
+      "bytes": 7210,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/comments_retrieved.csv",
+      "sha256": "a8a8d6aeaf07bab16be4c1b389fee143d14738feed0f4023f6e9ba2b9af61344",
+      "bytes": 200526,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/comments_review.csv",
+      "sha256": "c95bdeae3f832e4af67e3e6ebcaf01b2f9b2835f1de1cdba5b60365db1150abc",
+      "bytes": 39953,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/eligibility_audit.csv",
+      "sha256": "3911520bf4cdb16174954225c16183038c31713a634dccedba7e9ec6f2536c02",
+      "bytes": 82003,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/eligibility_manifest.json",
+      "sha256": "b1493361f45401451eb1a8f0b9425b7b64c863e12d0e309816cb42d15fad6aa9",
+      "bytes": 338,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_03_lifestyle/video_metadata.json",
+      "sha256": "f0568ec67bd9733fe0df1e322e8f36ff0868bc45c16ce41ea0621e54c81ab92f",
+      "bytes": 2036,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/collection_manifest.json",
+      "sha256": "0868f196daeca2c4cfa9e0c773f70ec646595d4afc07a13986c1c25e944ac375",
+      "bytes": 698,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/comments_eligible.csv",
+      "sha256": "dab9530c8acd063fdae3afdc65ea1d42ffc5e2aa92a00d99d18742933eaf57eb",
+      "bytes": 125970,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/comments_excluded.csv",
+      "sha256": "e7e01b8d48e6e0d0efb5357dcda0c4d66d621cf191fc44b07dbde975f664ac96",
+      "bytes": 1957,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/comments_retrieved.csv",
+      "sha256": "a92d5a01dc4631fa0e2252e2971890384c10923c3246ab52fa780dd0bf5952da",
+      "bytes": 187194,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/comments_review.csv",
+      "sha256": "8061b419a94ac62a9be7bca9512d7167f1a4938b727c5043137cedfadcb56542",
+      "bytes": 35652,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/eligibility_audit.csv",
+      "sha256": "16734ae2fc15b9a0500d88ddd677a1c53a6e76e042d0d700596ecd6c1539a7f9",
+      "bytes": 82082,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/eligibility_manifest.json",
+      "sha256": "42e091b8b6dcc037d72d8a61014102a9c2bdbff2827f3433391546e0d720047c",
+      "bytes": 337,
+      "private": true
+    },
+    {
+      "path": "data/youtube/raw/video_04_pop_culture/video_metadata.json",
+      "sha256": "7319f7842913da6f87785124448b2cacad2c067436e7f851696982c61ece154e",
+      "bytes": 1415,
+      "private": true
+    },
+    {
+      "path": "data/youtube/revisions/quality_revision_20261103/replacement_audit.csv",
+      "sha256": "b4e28f3678af8e3c2a8df3c27fde880e0ce0ac34a35605520f9812c1c0100834",
+      "bytes": 1285,
+      "private": true
+    },
+    {
+      "path": "data/youtube/revisions/quality_revision_20261103/revision_manifest.json",
+      "sha256": "361ee93bdaac44ea74563fa5c87283cd583d6d194b9cad9c4ecce5aa1b921cd9",
+      "bytes": 1277,
+      "private": true
+    },
+    {
+      "path": "data/youtube/revisions/quality_revision_20261103/youtube_final_200.csv",
+      "sha256": "f492afa6781ef7f07c920c1bce9528a57028ce7c459267903e857b4b0adc5813",
+      "bytes": 59355,
+      "private": true
+    },
+    {
+      "path": "data/youtube/sampled/youtube_final_200.csv",
+      "sha256": "e9ad530517280df8127d34977f1c3a812b7d9462d20511f6795566751896eea6",
+      "bytes": 57880,
+      "private": true
+    }
+  ]
+}

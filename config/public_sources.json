@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/tweets_GroundTruth.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/tweets_GroundTruth.txt",
+      "sha256": "dfbe7102e2f92579ed8b19df9a3822491880697c67adf712fb66e520cc05102f"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/tweets_anonDataRatings.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/tweets_anonDataRatings.txt",
+      "sha256": "390d6f8f1b5c7e6f9f94ad7fea1e461ed718312d1856ae71c5812ab8ae943fa6"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/movieReviewSnippets_GroundTruth.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/movieReviewSnippets_GroundTruth.txt",
+      "sha256": "c8293b0d942e90e223ea2c0955d969040d1a1be514a978b9af0698940bd13350"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/movieReviewSnippets_anonDataRatings.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/movieReviewSnippets_anonDataRatings.txt",
+      "sha256": "658a086bc7239b98b750baa232cab80e6447789020f96a6c847cc1248d7c82f4"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/amazonReviewSnippets_GroundTruth.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/amazonReviewSnippets_GroundTruth.txt",
+      "sha256": "11a9807a0974a2506a2d3b4851eaf69b3d6d20688ce4923adda2312a4f6dd6c2"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/amazonReviewSnippets_anonDataRatings.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/amazonReviewSnippets_anonDataRatings.txt",
+      "sha256": "d7d909adab91e0b4d5084251fc825f15baff66277c52eaa705b40fc464fa274b"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/nytEditorialSnippets_GroundTruth.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/nytEditorialSnippets_GroundTruth.txt",
+      "sha256": "7d8fbcce7dde5d716da53e78f4ef4be6b706e9ef1e1d51887e6d0ad4b69cc27e"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/nytEditorialSnippets_anonDataRatings.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/nytEditorialSnippets_anonDataRatings.txt",
+      "sha256": "803c87c5bb529334bb5ed5fca244aa935e5f342bc0a930d91a0f22e978ee39f2"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/_README_.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/_README_.txt",
+      "sha256": "583d6381c04a4b342ac6e7268066128467785f1f4801c4f7d44afb1ccbaad939"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/vader_icwsm2014_final.pdf",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vader_icwsm2014_final.pdf",
+      "sha256": "5c0e7bad7ec7b95e43cd6c95de18bc201b9f12363c783b9042cbeeab88794007"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/vaderSentiment.py",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vaderSentiment.py",
+      "sha256": "a7f2b4cf640834a607223a1e6763423d393df440d2c5b5acbc1de999efaef30e"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/vader_sentiment_lexicon.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vader_sentiment_lexicon.txt",
+      "sha256": "88645aa949987662301d41a3f26b950f41b239a4de4e0d4aee84857bf242e35d"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/README.rst",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/README.rst",
+      "sha256": "c475c0cdf28d8883041fc9081d1fb82e08cb508a269139f20dd533c66f58dd02"
+    },
+    {
+      "dataset": "original_vader",
+      "path": "data/original_vader/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/LICENSE.txt",
+      "sha256": "b78925304c567623f14677bad66b8e305e7ddcaf7982c8d8411ce51c55a8bf51"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/dev.tsv",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/dev.tsv",
+      "sha256": "575489c079c9de1097062a01738f998590d6b7ead66dd1c9fd1d2ba01fd8bc62"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/emotions.txt",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/emotions.txt",
+      "sha256": "45c3ef86782d2a4d7fedcd6d8c111aa0d0e94720689bd164fac94fefb4495a89"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/sentiment_mapping.json",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/sentiment_mapping.json",
+      "sha256": "801f6f028082141bd38541a4b14d65b33bdc55d29c7b2aaa029fefecf206f76b"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/test.tsv",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/test.tsv",
+      "sha256": "0587b2dd8b27b97352adbfc3fb083d46005c8946657fdc2b1ca8b1cc7f1f8be4"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/train.tsv",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/train.tsv",
+      "sha256": "1c254a142be5c00e80d819b9ae1bbd36d94b2eeb8f4b1271846508d57e57d9c5"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/README.md",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/README.md",
+      "sha256": "c882c69be9f400129bce8535319606434481a085be9c20263930670890e171a7"
+    },
+    {
+      "dataset": "goemotions",
+      "path": "data/goemotions/raw/LICENSE",
+      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

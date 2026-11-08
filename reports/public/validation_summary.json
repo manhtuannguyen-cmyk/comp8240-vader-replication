@@ -1,0 +1,39 @@
+{
+  "environment": {
+    "python": "3.14.5",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "vaderSentiment": "3.3.2",
+      "matplotlib": "3.10.7",
+      "seaborn": "0.13.2",
+      "statsmodels": "0.15.0"
+    },
+    "execution_utc": "2026-11-05T05:52:05.633775+00:00"
+  },
+  "unit_tests_passed": 13,
+  "api_tests": "mocked adapters only; no inference calls",
+  "complete_offline_command": "passed in this repository own isolated venv; bootstrap repetitions 2000",
+  "goemotions_mapping": "54263 raw -> 45258 retained + 9005 excluded; independently regenerated",
+  "youtube_sampling": "initial seed-42 draw and all seven recorded replacements reproduced",
+  "annotation_exports": "200 per annotator; input bytes preserved",
+  "notebook_executed_code_cells": 24,
+  "notebook_execution_errors": 0,
+  "notebook_vs_script_result_checks": "all passed for both VADER versions and all LLMs",
+  "public_release_test": "separate allowlisted copy, upstream original benchmark download SHA-256 validation, original + GoEmotions run all passed",
+  "private_exclusions_test": "private YouTube data, response files, executed outputs, .env and venv excluded by exporter and gitignore checks",
+  "scientific_figures": 13,
+  "figure_formats": [
+    "300-dpi PNG",
+    "SVG"
+  ],
+  "remaining_historical_gaps": [
+    "exact historical model IDs/generation settings/role placement",
+    "raw provider API envelopes for original judge runs",
+    "independently adjudicated human labels",
+    "human-verified causal error categories"
+  ]
+}

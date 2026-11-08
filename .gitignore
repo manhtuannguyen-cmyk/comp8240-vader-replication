@@ -1,0 +1,54 @@
+# Credentials and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+__pycache__/
+*.py[cod]
+.Python
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.tox/
+.nox/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Editor, operating-system and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+*.log
+tmp/
+.tmp/
+
+# Private API-derived inputs, raw provider logs and annotation records
+/data/youtube/**
+!/data/youtube/README.md
+/reports/youtube/
+/notebooks/private/
+
+# Original third-party evaluation text: fetch from pinned authors' release
+/data/original_vader/*GroundTruth.txt
+/data/original_vader/*anonDataRatings.txt
+/data/original_vader/*.pdf
+
+# Regenerable nonessential predictions/caches
+/reports/goemotions/predictions.csv
+/reports/replication/*_predictions.csv

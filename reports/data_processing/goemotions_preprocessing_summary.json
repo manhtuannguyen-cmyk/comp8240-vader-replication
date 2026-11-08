@@ -1,0 +1,96 @@
+{
+  "original_records": 54263,
+  "retained": 45258,
+  "excluded": 9005,
+  "classes": {
+    "neutral": 16021,
+    "negative": 10217,
+    "positive": 19020
+  },
+  "class_percentages": {
+    "positive": 42.025719209863446,
+    "negative": 22.57501436210173,
+    "neutral": 35.39926642803482
+  },
+  "original_emotion_distribution": {
+    "neutral": 17772,
+    "anger": 1960,
+    "fear": 764,
+    "annoyance": 3093,
+    "surprise": 1330,
+    "gratitude": 3372,
+    "desire": 801,
+    "optimism": 1976,
+    "admiration": 5122,
+    "confusion": 1673,
+    "amusement": 2895,
+    "approval": 3687,
+    "caring": 1375,
+    "embarrassment": 375,
+    "realization": 1382,
+    "disappointment": 1583,
+    "grief": 96,
+    "sadness": 1625,
+    "curiosity": 2723,
+    "joy": 1785,
+    "love": 2576,
+    "excitement": 1052,
+    "disapproval": 2581,
+    "remorse": 669,
+    "disgust": 1013,
+    "relief": 182,
+    "pride": 142,
+    "nervousness": 208
+  },
+  "primary_exclusion_reasons": {
+    "ambiguous_emotion_present": 6668,
+    "neutral_with_other_emotion": 1345,
+    "mixed_positive_negative": 992
+  },
+  "all_exclusion_reason_occurrences": {
+    "ambiguous_emotion_present": 6668,
+    "neutral_with_other_emotion": 1751,
+    "mixed_positive_negative": 1023
+  },
+  "splits": {
+    "train": {
+      "original": 43410,
+      "retained": 36172,
+      "excluded": 7238,
+      "classes": {
+        "neutral": 12823,
+        "negative": 8133,
+        "positive": 15216
+      }
+    },
+    "validation": {
+      "original": 5426,
+      "retained": 4547,
+      "excluded": 879,
+      "classes": {
+        "neutral": 1592,
+        "negative": 1014,
+        "positive": 1941
+      }
+    },
+    "test": {
+      "original": 5427,
+      "retained": 4539,
+      "excluded": 888,
+      "classes": {
+        "negative": 1070,
+        "positive": 1863,
+        "neutral": 1606
+      }
+    }
+  },
+  "duplicate_ids_beyond_first": 0,
+  "same_text_distinct_id_groups": 166,
+  "cross_split_text_groups": 71,
+  "raw_sha256": {
+    "vader-sentiment-analysis/data/raw/goemotions/train.tsv": "1c254a142be5c00e80d819b9ae1bbd36d94b2eeb8f4b1271846508d57e57d9c5",
+    "vader-sentiment-analysis/data/raw/goemotions/dev.tsv": "575489c079c9de1097062a01738f998590d6b7ead66dd1c9fd1d2ba01fd8bc62",
+    "vader-sentiment-analysis/data/raw/goemotions/test.tsv": "0587b2dd8b27b97352adbfc3fb083d46005c8946657fdc2b1ca8b1cc7f1f8be4",
+    "vader-sentiment-analysis/data/raw/goemotions/emotions.txt": "45c3ef86782d2a4d7fedcd6d8c111aa0d0e94720689bd164fac94fefb4495a89"
+  }
+}

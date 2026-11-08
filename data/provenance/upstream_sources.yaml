@@ -1,0 +1,831 @@
+audit_at: '2026-11-03T12:38:16.473997+11:00'
+timezone: Australia/Sydney
+raw_data_modified: false
+preprocessing_status: deferred_by_user
+datasets:
+- name: Original VADER evaluation corpora
+  source: https://github.com/cjhutto/vaderSentiment
+  version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+  source_commit_date: '2026-03-02T15:09:02Z'
+  citation: 'Hutto, C.J. and Gilbert, E.E. (2014). VADER: A Parsimonious Rule-Based
+    Model for Sentiment Analysis of Social Media Text. ICWSM 8(1), 216–225.'
+  licence: MIT (repository); preserve notices; third-party source text rights are
+    not independently cleared
+  files:
+  - path: data/raw/original_vader/tweets_GroundTruth.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/tweets_GroundTruth.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 389886
+    sha256: dfbe7102e2f92579ed8b19df9a3822491880697c67adf712fb66e520cc05102f
+    git_blob_sha1: f875b863cf422435046b85fd746517c66e13ff0b
+    format: TSV (no header)
+    records: 4200
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 4200
+    score_range:
+    - -3.75
+    - 3.55
+    invalid_scores: 0
+    duplicate_texts: 0
+    schema:
+      id: Author-provided snippet ID
+      mean_sentiment_rating: Aggregated human sentiment intensity on original -4 to
+        +4 scale
+      text: Unmodified tweet-like text or sentence-level review/editorial snippet
+    validation_passed: true
+    dataset_name: Twitter / tweet-like texts
+  - path: data/raw/original_vader/tweets_anonDataRatings.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/tweets_anonDataRatings.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 616147
+    sha256: 390d6f8f1b5c7e6f9f94ad7fea1e461ed718312d1856ae71c5812ab8ae943fa6
+    git_blob_sha1: 71dcd43478387b54e32c4205c48af4225db19cad
+    format: TSV (no header)
+    records: 4200
+    columns: 4
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: null
+    expected_records: 4200
+    score_range:
+    - -3.75
+    - 3.55
+    invalid_scores: 0
+    rating_count_frequency:
+      20: 3200
+      92: 50
+      93: 50
+      94: 100
+      95: 275
+      96: 125
+      97: 250
+      98: 125
+      99: 25
+    invalid_rating_rows: []
+    recomputed_mean_mismatch_ids: []
+    recomputed_population_sd_mismatch_ids: []
+    schema:
+      id: Snippet ID matching GroundTruth file
+      mean_sentiment_rating: Original aggregate human score, -4 to +4
+      standard_deviation: Author-provided rating standard deviation
+      raw_sentiment_ratings: Literal list of anonymized human intensity ratings
+    validation_passed: true
+    dataset_name: Twitter / tweet-like texts
+  - path: data/raw/original_vader/movieReviewSnippets_GroundTruth.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/movieReviewSnippets_GroundTruth.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 1383098
+    sha256: c8293b0d942e90e223ea2c0955d969040d1a1be514a978b9af0698940bd13350
+    git_blob_sha1: 9e6e3246e531b72bb5b8850a9eff10b9e4344e28
+    format: TSV (no header)
+    records: 10605
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 10605
+    score_range:
+    - -3.875
+    - 3.94117647059
+    invalid_scores: 0
+    duplicate_texts: 2
+    schema:
+      id: Author-provided snippet ID
+      mean_sentiment_rating: Aggregated human sentiment intensity on original -4 to
+        +4 scale
+      text: Unmodified tweet-like text or sentence-level review/editorial snippet
+    validation_passed: true
+    dataset_name: Movie review snippets
+  - path: data/raw/original_vader/movieReviewSnippets_anonDataRatings.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/movieReviewSnippets_anonDataRatings.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 954033
+    sha256: 658a086bc7239b98b750baa232cab80e6447789020f96a6c847cc1248d7c82f4
+    git_blob_sha1: 837b68197e2b92b7756cbccccca4720eb6ace5a2
+    format: TSV (no header)
+    records: 10605
+    columns: 4
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: null
+    expected_records: 10605
+    score_range:
+    - -3.875
+    - 3.941176471
+    invalid_scores: 0
+    rating_count_frequency:
+      15: 2220
+      16: 1095
+      17: 1380
+      18: 1440
+      19: 1140
+      20: 810
+      21: 510
+      22: 360
+      23: 300
+      24: 240
+      25: 210
+      26: 300
+      27: 450
+      28: 90
+      29: 60
+    invalid_rating_rows: []
+    recomputed_mean_mismatch_ids: []
+    recomputed_population_sd_mismatch_ids: []
+    schema:
+      id: Snippet ID matching GroundTruth file
+      mean_sentiment_rating: Original aggregate human score, -4 to +4
+      standard_deviation: Author-provided rating standard deviation
+      raw_sentiment_ratings: Literal list of anonymized human intensity ratings
+    validation_passed: true
+    dataset_name: Movie review snippets
+  - path: data/raw/original_vader/amazonReviewSnippets_GroundTruth.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/amazonReviewSnippets_GroundTruth.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 373157
+    sha256: 11a9807a0974a2506a2d3b4851eaf69b3d6d20688ce4923adda2312a4f6dd6c2
+    git_blob_sha1: 906afc3962dc919f075556fa3d98b3200d6f2d75
+    format: TSV (no header)
+    records: 3708
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 3708
+    score_range:
+    - -3.7
+    - 3.85
+    invalid_scores: 0
+    duplicate_texts: 11
+    schema:
+      id: Author-provided snippet ID
+      mean_sentiment_rating: Aggregated human sentiment intensity on original -4 to
+        +4 scale
+      text: Unmodified tweet-like text or sentence-level review/editorial snippet
+    validation_passed: true
+    dataset_name: Amazon product review snippets
+  - path: data/raw/original_vader/amazonReviewSnippets_anonDataRatings.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/amazonReviewSnippets_anonDataRatings.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 322811
+    sha256: d7d909adab91e0b4d5084251fc825f15baff66277c52eaa705b40fc464fa274b
+    git_blob_sha1: 574d811f1999bcb413482dae8af145be4ef3b1a5
+    format: TSV (no header)
+    records: 3708
+    columns: 4
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: null
+    expected_records: 3708
+    score_range:
+    - -3.7
+    - 3.85
+    invalid_scores: 0
+    rating_count_frequency:
+      20: 3708
+    invalid_rating_rows: []
+    recomputed_mean_mismatch_ids: []
+    recomputed_population_sd_mismatch_ids: []
+    schema:
+      id: Snippet ID matching GroundTruth file
+      mean_sentiment_rating: Original aggregate human score, -4 to +4
+      standard_deviation: Author-provided rating standard deviation
+      raw_sentiment_ratings: Literal list of anonymized human intensity ratings
+    validation_passed: true
+    dataset_name: Amazon product review snippets
+  - path: data/raw/original_vader/nytEditorialSnippets_GroundTruth.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/nytEditorialSnippets_GroundTruth.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 607629
+    sha256: 7d8fbcce7dde5d716da53e78f4ef4be6b706e9ef1e1d51887e6d0ad4b69cc27e
+    git_blob_sha1: e3df5fca4f31215fe0fb20b07f5fa04da671f1ef
+    format: TSV (no header)
+    records: 5190
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 5190
+    score_range:
+    - -2.8
+    - 2.8
+    invalid_scores: 0
+    duplicate_texts: 71
+    schema:
+      id: Author-provided snippet ID
+      mean_sentiment_rating: Aggregated human sentiment intensity on original -4 to
+        +4 scale
+      text: Unmodified tweet-like text or sentence-level review/editorial snippet
+    validation_passed: true
+    dataset_name: New York Times editorial snippets
+  - path: data/raw/original_vader/nytEditorialSnippets_anonDataRatings.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/nytEditorialSnippets_anonDataRatings.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 450054
+    sha256: 803c87c5bb529334bb5ed5fca244aa935e5f342bc0a930d91a0f22e978ee39f2
+    git_blob_sha1: c773eb5125a967ac74c88e60137a36ba66c425a0
+    format: TSV (no header)
+    records: 5190
+    columns: 4
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: null
+    expected_records: 5190
+    score_range:
+    - -2.8
+    - 2.8
+    invalid_scores: 0
+    rating_count_frequency:
+      20: 5190
+    invalid_rating_rows: []
+    recomputed_mean_mismatch_ids: []
+    recomputed_population_sd_mismatch_ids: []
+    schema:
+      id: Snippet ID matching GroundTruth file
+      mean_sentiment_rating: Original aggregate human score, -4 to +4
+      standard_deviation: Author-provided rating standard deviation
+      raw_sentiment_ratings: Literal list of anonymized human intensity ratings
+    validation_passed: true
+    dataset_name: New York Times editorial snippets
+  - path: data/raw/original_vader/_README_.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/_README_.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 12408
+    sha256: 583d6381c04a4b342ac6e7268066128467785f1f4801c4f7d44afb1ccbaad939
+    git_blob_sha1: 96c760054cbb1b0219c3077b5744ba6c437623ea
+    format: text/source
+  - path: data/raw/original_vader/vader_icwsm2014_final.pdf
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vader_icwsm2014_final.pdf
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 828942
+    sha256: 5c0e7bad7ec7b95e43cd6c95de18bc201b9f12363c783b9042cbeeab88794007
+    git_blob_sha1: 2441fe4f37b28c722e200d37db24fc8da4cd5f22
+    format: PDF
+  - path: data/raw/original_vader/vaderSentiment.py
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vaderSentiment.py
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 20383
+    sha256: a7f2b4cf640834a607223a1e6763423d393df440d2c5b5acbc1de999efaef30e
+    git_blob_sha1: 87ea1dcd45e5f310b5a2cc3872c981fa44504418
+    format: text/source
+  - path: data/raw/original_vader/vader_sentiment_lexicon.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vader_sentiment_lexicon.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 434145
+    sha256: 88645aa949987662301d41a3f26b950f41b239a4de4e0d4aee84857bf242e35d
+    git_blob_sha1: dba10120dc8bab179c5fd784b356f52026db5227
+    format: text/source
+  - path: data/raw/original_vader/README.rst
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/README.rst
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 23185
+    sha256: c475c0cdf28d8883041fc9081d1fb82e08cb508a269139f20dd533c66f58dd02
+    git_blob_sha1: ea130d320a8e9c3e5af607f3598937f93eeae418
+    format: text
+    kind: documentation
+  - path: data/raw/original_vader/LICENSE.txt
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/LICENSE.txt
+    version: 44fc044cd877310ee8278a0eadf34bcd50d41d06
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 1076
+    sha256: b78925304c567623f14677bad66b8e305e7ddcaf7982c8d8411ce51c55a8bf51
+    git_blob_sha1: 62a909ca0ff8aebdf09d50e590587dca94f1d152
+    format: text
+    kind: documentation
+  errors: []
+  archive:
+    source_url: https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz
+    git_blob_sha1: 17f4f9665a479c8b4ce5591341273fa22ac52592
+    sha256: d5bb07d87474b3eb8d30b4deccbc23f19d742a6c5718fbacc65485b70b95c5fa
+    bytes: 2338514
+    retained: false
+  paired_annotation_checks:
+    tweets:
+      ids_match: true
+      mean_mismatch_count: 199
+      mean_mismatch_ids:
+      - '100'
+      - '101'
+      - '11'
+      - '114'
+      - '119'
+      - '124'
+      - '136'
+      - '1424'
+      - '1425'
+      - '1426'
+      - '1427'
+      - '1428'
+      - '1429'
+      - '1430'
+      - '1431'
+      - '1432'
+      - '1433'
+      - '1434'
+      - '1435'
+      - '1436'
+      - '1437'
+      - '1438'
+      - '1439'
+      - '1440'
+      - '1441'
+      - '1442'
+      - '1443'
+      - '1444'
+      - '1445'
+      - '1446'
+      - '1447'
+      - '1448'
+      - '1449'
+      - '1450'
+      - '1451'
+      - '1452'
+      - '1453'
+      - '1454'
+      - '1455'
+      - '1456'
+      - '1457'
+      - '1458'
+      - '1459'
+      - '1460'
+      - '1461'
+      - '1462'
+      - '1463'
+      - '1464'
+      - '1465'
+      - '1466'
+      - '1467'
+      - '1468'
+      - '1469'
+      - '1470'
+      - '1471'
+      - '1472'
+      - '1473'
+      - '1474'
+      - '1475'
+      - '1476'
+      - '1477'
+      - '1478'
+      - '1479'
+      - '1480'
+      - '1481'
+      - '1482'
+      - '1483'
+      - '1485'
+      - '1486'
+      - '15'
+      - '169'
+      - '175'
+      - '1818'
+      - '1819'
+      - '1820'
+      - '1821'
+      - '1822'
+      - '1823'
+      - '1824'
+      - '1825'
+      - '1826'
+      - '1827'
+      - '1828'
+      - '1829'
+      - '1830'
+      - '1831'
+      - '1832'
+      - '1833'
+      - '1834'
+      - '1835'
+      - '1836'
+      - '1837'
+      - '1838'
+      - '1839'
+      - '1840'
+      - '1841'
+      - '1842'
+      - '1843'
+      - '1844'
+      - '1845'
+      - '1846'
+      - '1847'
+      - '1848'
+      - '1849'
+      - '1850'
+      - '1851'
+      - '1852'
+      - '1853'
+      - '1854'
+      - '1855'
+      - '1856'
+      - '1857'
+      - '1858'
+      - '1859'
+      - '1860'
+      - '1861'
+      - '1862'
+      - '1863'
+      - '1864'
+      - '1865'
+      - '1866'
+      - '1867'
+      - '1868'
+      - '1869'
+      - '1870'
+      - '1871'
+      - '1872'
+      - '1873'
+      - '1874'
+      - '1875'
+      - '1876'
+      - '2'
+      - '20'
+      - '203'
+      - '215'
+      - '220'
+      - '2215'
+      - '2216'
+      - '2217'
+      - '2218'
+      - '2219'
+      - '2220'
+      - '2221'
+      - '2222'
+      - '2223'
+      - '2224'
+      - '2225'
+      - '2226'
+      - '239'
+      - '242'
+      - '252'
+      - '253'
+      - '273'
+      - '2849'
+      - '2850'
+      - '2851'
+      - '2852'
+      - '2853'
+      - '2854'
+      - '2855'
+      - '288'
+      - '298'
+      - '30'
+      - '3201'
+      - '3202'
+      - '3203'
+      - '3204'
+      - '3205'
+      - '3206'
+      - '3207'
+      - '3208'
+      - '3209'
+      - '3210'
+      - '3211'
+      - '3212'
+      - '35'
+      - '3550'
+      - '3551'
+      - '3552'
+      - '3553'
+      - '3554'
+      - '3855'
+      - '3856'
+      - '3857'
+      - '3858'
+      - '3859'
+      - '3860'
+      - '3861'
+      - '3862'
+      - '3863'
+      - '3864'
+      - '3865'
+      - '3866'
+      - '58'
+      - '60'
+      - '7'
+      - '73'
+      - '89'
+      - '9'
+      max_absolute_mean_difference: 1.125083986
+    movieReviewSnippets:
+      ids_match: true
+      mean_mismatch_count: 0
+      mean_mismatch_ids: []
+      max_absolute_mean_difference: 4.81000017593658e-10
+    amazonReviewSnippets:
+      ids_match: true
+      mean_mismatch_count: 0
+      mean_mismatch_ids: []
+      max_absolute_mean_difference: 0.0
+    nytEditorialSnippets:
+      ids_match: true
+      mean_mismatch_count: 0
+      mean_mismatch_ids: []
+      max_absolute_mean_difference: 0.0
+  source_caveats:
+  - 'movieReviewSnippets_GroundTruth.txt: 2 duplicate text occurrences beyond the
+    first; preserved.'
+  - 'movieReviewSnippets_anonDataRatings.txt: 7275 rows have fewer than 20 human ratings
+    despite the README''s minimum-20 description; observed range 15–29.'
+  - 'amazonReviewSnippets_GroundTruth.txt: 11 duplicate text occurrences beyond the
+    first; preserved.'
+  - 'nytEditorialSnippets_GroundTruth.txt: 71 duplicate text occurrences beyond the
+    first; preserved.'
+  - 'tweets: 199 GroundTruth mean scores differ from the corresponding anonDataRatings
+    means (tolerance 1e-5); maximum difference 1.125083986. Do not silently reconcile
+    or claim per-rater agreement before choosing the reference file.'
+  structural_validation_passed: true
+- name: GoEmotions official agreement-filtered splits
+  source: https://github.com/google-research/google-research
+  version: 7951440944924ac61b6e2f9a2a3c715834005c40
+  source_commit_date: '2026-04-14T11:56:27Z'
+  citation: 'Demszky, D., Movshovitz-Attias, D., Ko, J., Cowen, A., Nemade, G. and
+    Ravi, S. (2020). GoEmotions: A Dataset of Fine-Grained Emotions. ACL, 4040–4054.
+    DOI:10.18653/v1/2020.acl-main.372.'
+  licence: Apache-2.0 (official repository and official dataset distribution)
+  files:
+  - path: data/raw/goemotions/dev.tsv
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/dev.tsv
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 439059
+    sha256: 575489c079c9de1097062a01738f998590d6b7ead66dd1c9fd1d2ba01fd8bc62
+    git_blob_sha1: 38c793645ca3a2e946d625c9722ca5386b0a6c7f
+    format: TSV (no header)
+    kind: split
+    records: 5426
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 5426
+    invalid_label_rows: []
+    multi_label_records: 878
+    label_frequency:
+      neutral: 1766
+      approval: 397
+      sadness: 143
+      optimism: 209
+      gratitude: 358
+      anger: 195
+      disapproval: 292
+      love: 252
+      embarrassment: 35
+      realization: 127
+      grief: 13
+      amusement: 303
+      annoyance: 303
+      disappointment: 163
+      admiration: 488
+      caring: 153
+      curiosity: 248
+      remorse: 68
+      joy: 172
+      fear: 90
+      desire: 77
+      excitement: 96
+      confusion: 152
+      disgust: 97
+      surprise: 129
+      relief: 18
+      pride: 15
+      nervousness: 21
+    validation_passed: true
+    schema:
+      text: Original masked Reddit comment text
+      emotion_ids: Comma-separated zero-based IDs into emotions.txt; multi-label annotations
+        preserved
+      id: Original example/comment identifier
+  - path: data/raw/goemotions/emotions.txt
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/emotions.txt
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 248
+    sha256: 45c3ef86782d2a4d7fedcd6d8c111aa0d0e94720689bd164fac94fefb4495a89
+    git_blob_sha1: 0d79bc030e766bc9dac1f4482bfbd864556c284a
+    format: text
+    kind: taxonomy
+  - path: data/raw/goemotions/sentiment_mapping.json
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/sentiment_mapping.json
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 367
+    sha256: 801f6f028082141bd38541a4b14d65b33bdc55d29c7b2aaa029fefecf206f76b
+    git_blob_sha1: d282323dc1f5adcb0a31cd296280ba7dcafeaebd
+    format: JSON
+    kind: taxonomy
+  - path: data/raw/goemotions/test.tsv
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/test.tsv
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 436706
+    sha256: 0587b2dd8b27b97352adbfc3fb083d46005c8946657fdc2b1ca8b1cc7f1f8be4
+    git_blob_sha1: 7635db4a49befb91e5bc0dbedde095bb2d8593ae
+    format: TSV (no header)
+    kind: split
+    records: 5427
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 5427
+    invalid_label_rows: []
+    multi_label_records: 837
+    label_frequency:
+      sadness: 156
+      admiration: 504
+      excitement: 103
+      gratitude: 352
+      neutral: 1787
+      remorse: 56
+      annoyance: 320
+      disapproval: 267
+      amusement: 264
+      love: 238
+      desire: 83
+      curiosity: 284
+      fear: 78
+      confusion: 153
+      optimism: 186
+      approval: 351
+      caring: 135
+      joy: 161
+      surprise: 141
+      disappointment: 151
+      realization: 145
+      anger: 198
+      disgust: 123
+      embarrassment: 37
+      nervousness: 23
+      pride: 16
+      relief: 11
+      grief: 6
+    validation_passed: true
+    schema:
+      text: Original masked Reddit comment text
+      emotion_ids: Comma-separated zero-based IDs into emotions.txt; multi-label annotations
+        preserved
+      id: Original example/comment identifier
+  - path: data/raw/goemotions/train.tsv
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/train.tsv
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 3519053
+    sha256: 1c254a142be5c00e80d819b9ae1bbd36d94b2eeb8f4b1271846508d57e57d9c5
+    git_blob_sha1: aa00d732d3b9e969d9fcbaafc2c5b094555746c0
+    format: TSV (no header)
+    kind: split
+    records: 43410
+    columns: 3
+    missing_cells: 0
+    duplicate_ids: 0
+    empty_texts: 0
+    expected_records: 43410
+    invalid_label_rows: []
+    multi_label_records: 7102
+    label_frequency:
+      neutral: 14219
+      anger: 1567
+      fear: 596
+      annoyance: 2470
+      surprise: 1060
+      gratitude: 2662
+      desire: 641
+      optimism: 1581
+      admiration: 4130
+      confusion: 1368
+      amusement: 2328
+      approval: 2939
+      caring: 1087
+      embarrassment: 303
+      realization: 1110
+      disappointment: 1269
+      grief: 77
+      sadness: 1326
+      curiosity: 2191
+      joy: 1452
+      love: 2086
+      excitement: 853
+      disapproval: 2022
+      remorse: 545
+      disgust: 793
+      relief: 153
+      pride: 111
+      nervousness: 164
+    validation_passed: true
+    schema:
+      text: Original masked Reddit comment text
+      emotion_ids: Comma-separated zero-based IDs into emotions.txt; multi-label annotations
+        preserved
+      id: Original example/comment identifier
+  - path: data/raw/goemotions/README.md
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/README.md
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 7968
+    sha256: c882c69be9f400129bce8535319606434481a085be9c20263930670890e171a7
+    git_blob_sha1: 6bd6176f67791128791c536720b207a375a12140
+    format: text
+    kind: documentation
+  - path: data/raw/goemotions/LICENSE
+    source_url: https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/LICENSE
+    version: 7951440944924ac61b6e2f9a2a3c715834005c40
+    retrieved_at: '2026-11-03T12:32:50.355780+11:00'
+    verified_at: '2026-11-03T12:38:16.473997+11:00'
+    bytes: 11358
+    sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+    git_blob_sha1: d645695673349e3947e8e5ae42332d0ac3164cd7
+    format: text
+    kind: documentation
+  errors: []
+  taxonomy_matches_official_27_plus_neutral: true
+  cross_split_id_overlap:
+    dev.tsv vs train.tsv: 0
+    dev.tsv vs test.tsv: 0
+    test.tsv vs train.tsv: 0
+  cross_split_exact_text_overlap:
+    dev.tsv vs train.tsv: 41
+    dev.tsv vs test.tsv: 10
+    test.tsv vs train.tsv: 32
+  official_split_total: 54263
+  source_caveats:
+  - Some GoEmotions texts occur in more than one official split under different IDs.
+    Original splits remain unchanged; account for this if training or tuning a model.
+  structural_validation_passed: true
+failed_attempts: []
+custom_reddit_collection_status:
+  status: blocked_no_access
+  real_data_only: true
+  counts:
+  - subreddit: GenZ
+    collected: 0
+    eligible: 0
+    excluded: 0
+    final: 0
+  - subreddit: gaming
+    collected: 0
+    eligible: 0
+    excluded: 0
+    final: 0
+  - subreddit: memes
+    collected: 0
+    eligible: 0
+    excluded: 0
+    final: 0
+  - subreddit: AskReddit
+    collected: 0
+    eligible: 0
+    excluded: 0
+    final: 0
+  final_sample_size: 0
+  provisional_selection_size: 0
+  exclusion_reasons: {}
+  duplicates: 0
+  missing_values:
+    comment_id: 0
+    subreddit: 0
+    comment_text: 0
+    collection_date: 0
+    word_count: 0
+    contains_emoji: 0
+    contains_slang: 0
+    contains_repeated_punctuation: 0
+    contains_capitalisation: 0
+  short_comment_ids: []
+  api_errors:
+  - error_type: AccessError
+    message: 'Missing environment variables: REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET,
+      REDDIT_USER_AGENT'

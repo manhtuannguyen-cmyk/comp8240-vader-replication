@@ -1,0 +1,41 @@
+goemotions_root: data/goemotions/raw
+youtube_root: data/youtube
+splits:
+  train: train.tsv
+  validation: dev.tsv
+  test: test.tsv
+goemotions_mapping:
+  positive:
+  - admiration
+  - amusement
+  - approval
+  - caring
+  - desire
+  - excitement
+  - gratitude
+  - joy
+  - love
+  - optimism
+  - pride
+  - relief
+  negative:
+  - anger
+  - annoyance
+  - disappointment
+  - disapproval
+  - disgust
+  - embarrassment
+  - fear
+  - grief
+  - nervousness
+  - remorse
+  - sadness
+  ambiguous:
+  - confusion
+  - curiosity
+  - realization
+  - surprise
+  neutral:
+  - neutral
+youtube_scope: all_4000_candidate_records_no_sampling
+youtube_duplicate_rule: deduplicate_same_id_exports_only_keep_distinct_ids_with_identical_text
