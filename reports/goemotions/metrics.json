@@ -44,14 +44,14 @@
         "support": 19020.0
       }
     },
-    "accuracy_ci_low": 0.6294953378408238,
-    "accuracy_ci_high": 0.6366305404569358,
+    "accuracy_ci_low": 0.6304957134650228,
+    "accuracy_ci_high": 0.6394234168544788,
     "accuracy_degenerate_draws": 0,
-    "macro_f1_ci_low": 0.603830007049069,
-    "macro_f1_ci_high": 0.6106823219637112,
+    "macro_f1_ci_low": 0.6042668256603563,
+    "macro_f1_ci_high": 0.6133056902106859,
     "macro_f1_degenerate_draws": 0,
-    "cohen_kappa_ci_low": 0.4304306265849827,
-    "cohen_kappa_ci_high": 0.44072026117872937,
+    "cohen_kappa_ci_low": 0.43171163460719236,
+    "cohen_kappa_ci_high": 0.4443880160817207,
     "cohen_kappa_degenerate_draws": 0
   },
   "all / VADER 3.3.2": {
@@ -99,14 +99,14 @@
         "support": 19020.0
       }
     },
-    "accuracy_ci_low": 0.6306288391002696,
-    "accuracy_ci_high": 0.6383838216447921,
+    "accuracy_ci_low": 0.631137036546025,
+    "accuracy_ci_high": 0.640174112864024,
     "accuracy_degenerate_draws": 0,
-    "macro_f1_ci_low": 0.6039800125934545,
-    "macro_f1_ci_high": 0.6113748423918131,
+    "macro_f1_ci_low": 0.6035569735056865,
+    "macro_f1_ci_high": 0.6128478688717419,
     "macro_f1_degenerate_draws": 0,
-    "cohen_kappa_ci_low": 0.4318947389165549,
-    "cohen_kappa_ci_high": 0.44280013474938085,
+    "cohen_kappa_ci_low": 0.43207844083867075,
+    "cohen_kappa_ci_high": 0.4451870008513747,
     "cohen_kappa_degenerate_draws": 0
   },
   "train / VADER 2014": {

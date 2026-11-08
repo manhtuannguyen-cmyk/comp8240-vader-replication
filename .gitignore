@@ -37,11 +37,6 @@ Thumbs.db
 tmp/
 .tmp/
 
-# Private API-derived inputs, raw provider logs and annotation records
-/data/youtube/**
-!/data/youtube/README.md
-/reports/youtube/
-
 # Original third-party evaluation text: fetch from pinned authors' release
 /data/original_vader/*GroundTruth.txt
 /data/original_vader/*anonDataRatings.txt

@@ -158,12 +158,6 @@
       "private": true
     },
     {
-      "path": "data/youtube/metadata/youtube_final_sampling_report.md",
-      "sha256": "e7fab5aaf9df8b6db5f55449e8061e54f2c90153f5822e4f6df3d13e93cd0b0d",
-      "bytes": 4115,
-      "private": true
-    },
-    {
       "path": "data/youtube/metadata/youtube_final_sampling_validation.json",
       "sha256": "35dcdf1446de1f0810f1550ec20ea5e805265ae334151186e7fb0304829be8a7",
       "bytes": 4762,
