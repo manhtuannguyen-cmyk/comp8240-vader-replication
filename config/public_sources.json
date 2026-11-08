@@ -50,12 +50,6 @@
     },
     {
       "dataset": "original_vader",
-      "path": "data/original_vader/_README_.txt",
-      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/_README_.txt",
-      "sha256": "583d6381c04a4b342ac6e7268066128467785f1f4801c4f7d44afb1ccbaad939"
-    },
-    {
-      "dataset": "original_vader",
       "path": "data/original_vader/vader_icwsm2014_final.pdf",
       "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vader_icwsm2014_final.pdf",
       "sha256": "5c0e7bad7ec7b95e43cd6c95de18bc201b9f12363c783b9042cbeeab88794007"
@@ -71,12 +65,6 @@
       "path": "data/original_vader/vader_sentiment_lexicon.txt",
       "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/additional_resources/hutto_ICWSM_2014.tar.gz#member=hutto_ICWSM_2014/vader_sentiment_lexicon.txt",
       "sha256": "88645aa949987662301d41a3f26b950f41b239a4de4e0d4aee84857bf242e35d"
-    },
-    {
-      "dataset": "original_vader",
-      "path": "data/original_vader/README.rst",
-      "url": "https://raw.githubusercontent.com/cjhutto/vaderSentiment/44fc044cd877310ee8278a0eadf34bcd50d41d06/README.rst",
-      "sha256": "c475c0cdf28d8883041fc9081d1fb82e08cb508a269139f20dd533c66f58dd02"
     },
     {
       "dataset": "original_vader",
@@ -113,12 +101,6 @@
       "path": "data/goemotions/raw/train.tsv",
       "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/data/train.tsv",
       "sha256": "1c254a142be5c00e80d819b9ae1bbd36d94b2eeb8f4b1271846508d57e57d9c5"
-    },
-    {
-      "dataset": "goemotions",
-      "path": "data/goemotions/raw/README.md",
-      "url": "https://raw.githubusercontent.com/google-research/google-research/7951440944924ac61b6e2f9a2a3c715834005c40/goemotions/README.md",
-      "sha256": "c882c69be9f400129bce8535319606434481a085be9c20263930670890e171a7"
     },
     {
       "dataset": "goemotions",

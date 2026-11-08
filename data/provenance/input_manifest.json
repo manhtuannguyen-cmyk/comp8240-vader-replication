@@ -2,12 +2,6 @@
   "snapshot": "2026-11-05",
   "files": [
     {
-      "path": "data/goemotions/raw/README.md",
-      "sha256": "c882c69be9f400129bce8535319606434481a085be9c20263930670890e171a7",
-      "bytes": 7968,
-      "private": false
-    },
-    {
       "path": "data/goemotions/raw/dev.tsv",
       "sha256": "575489c079c9de1097062a01738f998590d6b7ead66dd1c9fd1d2ba01fd8bc62",
       "bytes": 439059,
@@ -41,18 +35,6 @@
       "path": "data/original_vader/LICENSE.txt",
       "sha256": "b78925304c567623f14677bad66b8e305e7ddcaf7982c8d8411ce51c55a8bf51",
       "bytes": 1076,
-      "private": false
-    },
-    {
-      "path": "data/original_vader/README.rst",
-      "sha256": "c475c0cdf28d8883041fc9081d1fb82e08cb508a269139f20dd533c66f58dd02",
-      "bytes": 23185,
-      "private": false
-    },
-    {
-      "path": "data/original_vader/_README_.txt",
-      "sha256": "583d6381c04a4b342ac6e7268066128467785f1f4801c4f7d44afb1ccbaad939",
-      "bytes": 12408,
       "private": false
     },
     {

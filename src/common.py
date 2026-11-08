@@ -56,7 +56,7 @@ def check_unique(frame: pd.DataFrame, key='sample_id') -> None:
 def require_youtube() -> None:
     path = ROOT / 'data/youtube/metadata/youtube_final_sampling_validation.json'
     if not path.is_file():
-        raise FileNotFoundError('Private YouTube inputs unavailable. See data/youtube/README.md; original/GoEmotions evaluation still works.')
+        raise FileNotFoundError('Private YouTube inputs unavailable; original/GoEmotions evaluation still works.')
     deadline = datetime.fromisoformat(json.loads(path.read_text())['retention_deadline'])
     if datetime.now(timezone.utc) >= deadline:
         raise ValueError('YouTube snapshot expired. Refresh/delete all source derivatives before analysis; copying does not restart retention.')

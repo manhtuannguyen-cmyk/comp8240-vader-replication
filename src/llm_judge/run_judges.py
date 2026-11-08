@@ -57,7 +57,7 @@ def run(args):
     frame=read_csv(source,dtype=str)[['sample_id','comment_text_original']]
     check_unique(frame)
     if args.limit:frame=frame.head(args.limit)
-    prompt_path=ROOT/'prompts/supplied_judge_prompt.md'
+    prompt_path=ROOT/'prompts/supplied_judge_prompt.txt'
     rubric=prompt_path.read_text()
     system_prompt=args.system_prompt.read_text() if args.system_prompt else None
     print(f'{"EXECUTE" if args.execute else "DRY RUN"}: provider={args.provider}, model={args.model}, records={len(frame)}')

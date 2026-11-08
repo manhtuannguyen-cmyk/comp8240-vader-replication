@@ -42,11 +42,6 @@ tmp/
 !/data/youtube/README.md
 /reports/youtube/
 
-# Local research materials not included in the repository
-/notebooks/
-/tests/
-/docs/
-
 # Original third-party evaluation text: fetch from pinned authors' release
 /data/original_vader/*GroundTruth.txt
 /data/original_vader/*anonDataRatings.txt

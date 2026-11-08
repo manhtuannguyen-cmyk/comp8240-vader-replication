@@ -164,11 +164,6 @@ def run(include_youtube=True):
                 ax.set(xlabel='Human-verified coded cases (multi-tag)',ylabel='Error tag',title='Verified error-type frequencies')
                 save(fig,'verified_error_categories','Multi-tag human-verified codes; frequencies are not causal effects.')
         else:print('No verified error-coding records: sarcasm/slang/emoji causal-frequency chart not generated.')
-    for folder in {f for f,_,_ in captions}:
-        lines=['# Figure index','','PNG: 300 dpi. SVG: editable vector. Generated from the current metric files.','']
-        for directory,stem,caption in captions:
-            if directory==folder:lines.extend([f'## {stem}','','Files: `'+stem+'.png`, `'+stem+'.svg`','',caption,''])
-        (folder/'README.md').write_text('\n'.join(lines))
     print('Figures generated:',len(captions))
 
 

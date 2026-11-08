@@ -138,7 +138,7 @@ def run(public_only=False,repetitions=2000,figures=True):
         youtube_results=youtube(repetitions)
     else:
         youtube_results=None
-        print('YouTube / human / LLM stream NOT RUN: public-only scope or private inputs missing. See data/youtube/README.md.')
+        print('YouTube / human / LLM stream NOT RUN: public-only scope or private inputs missing.')
     cross=original[['dataset','system','n','accuracy','macro_f1','weighted_f1','pearson_r','macro_f1_ci_low','macro_f1_ci_high']].copy()
     go_all=go[go.split.eq('all')].copy();go_all['dataset']='GoEmotions (all retained)';go_all['pearson_r']=np.nan
     cross=pd.concat([cross,go_all.reindex(columns=cross.columns)],ignore_index=True)

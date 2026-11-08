@@ -15,14 +15,13 @@ def run(purge=False):
         print('No current private snapshot metadata; no deletion performed.');return
     deadline=datetime.fromisoformat(json.loads(source.read_text())['retention_deadline'])
     expired=datetime.now(timezone.utc)>=deadline
-    scopes=[ROOT/'data/youtube',ROOT/'reports/youtube',ROOT/'notebooks/private']
+    scopes=[ROOT/'data/youtube',ROOT/'reports/youtube']
     files=[]
     for scope in scopes:
         if not scope.resolve().is_relative_to(ROOT.resolve()):
             raise ValueError('Private-data scope resolves outside this repository')
         for path in scope.rglob('*') if scope.exists() else []:
             if not path.is_file():continue
-            if path==ROOT/'data/youtube/README.md':continue
             if not path.resolve().is_relative_to(scope.resolve()):raise ValueError('Refusing to follow a private-data symlink outside its scope')
             files.append(path)
     print('Deadline UTC:',deadline.isoformat(),'| expired:',expired,'| private files:',len(files))
@@ -31,7 +30,7 @@ def run(purge=False):
     if not expired:
         print('Not expired; no files deleted.');return
     for path in files:path.unlink()
-    print('Deleted private snapshot files:',len(files),'. Original VADER, GoEmotions, source code and documentation were not deleted.')
+    print('Deleted private snapshot files:',len(files),'. Original VADER, GoEmotions and source code were not deleted.')
 
 
 if __name__=='__main__':

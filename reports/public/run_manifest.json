@@ -15,9 +15,9 @@
       "seaborn": "0.13.2",
       "statsmodels": "0.15.0"
     },
-    "execution_utc": "2026-11-08T08:47:56.662436+00:00"
+    "execution_utc": "2026-11-08T08:59:27.965984+00:00"
   },
-  "main_script_sha256": "579ef4868ffa987a4d28b8e1803f167509d784c785e2d2148f5e2e9dc278be11",
+  "main_script_sha256": "bacbab262109a4d7b36801f648c7f2d2be53eccaead458b89793ba6f78598828",
   "youtube_evaluated": false,
   "interpretation": "pointwise percentile intervals; fixed-corpus conditional inference; paired McNemar family Holm adjusted"
 }
