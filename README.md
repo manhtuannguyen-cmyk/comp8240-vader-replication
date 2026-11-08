@@ -11,20 +11,19 @@ The **adapted 2014 implementation** is the primary replicated model. `vaderSenti
 Use these links to navigate the repository:
 
 - [Project overview and setup](README.md) — installation, reproduction commands, scope, and results.
-- [Environment specification](environment.yml) — Conda environment definition.
-- [Requirements](requirements.txt) — dependencies for the standard offline analysis. Optional [LLM](requirements-llm.txt) and [notebook](requirements-notebook.txt) dependency lists are provided separately.
+- [Requirements](requirements.txt) — all Python dependencies needed to run the project.
 - [Configuration](config/) — GoEmotions mapping rules, selected-video metadata, and pinned public source locations.
 - [Data](data/) — public VADER and GoEmotions inputs, processed public data, and provenance manifests. The [original VADER materials](data/original_vader/), [GoEmotions data](data/goemotions/), and [provenance records](data/provenance/) are included for reproducibility.
 - [Prompts](prompts/) — the supplied LLM-judge rubric and documentation of known historical-protocol gaps.
 - [Source code](src/) — implementation organised into [replication](src/replication/), [data processing](src/data_processing/), [annotation](src/annotation/), [LLM judging](src/llm_judge/), [evaluation](src/evaluation/), and [tools](src/tools/).
 - [Public reports](reports/public/) — generated public metrics, LaTeX table fragments, and figures. Other report folders contain local/generated material and may not be included in a public clone.
 
-This working folder also contains local private research material. **Do not upload the entire folder indiscriminately.** The `.gitignore` file excludes private YouTube inputs and annotations, LLM outputs, notebooks, tests, and internal documentation. The public-export command below enforces a separate allowlist, so a marker can reproduce the public VADER and GoEmotions workflow without access to the private YouTube snapshot.
+This working folder also contains local private research material. **Do not upload the entire folder indiscriminately.** The repository excludes private YouTube inputs and annotations, LLM outputs, notebooks, tests, and internal documentation. A public download can reproduce the VADER and GoEmotions workflow without the private YouTube snapshot.
 
 
 ## 2. Quick start — reproduce the current local project
 
-Tested with **Python 3.14.5 on macOS ARM64** in this folder's own isolated environment. The dependency versions are pinned. `requirements-lock.txt` records the full tested environment (including optional API/notebook dependencies); use `python -m pip install -r requirements-lock.txt` when that exact full environment is desired. NLTK and HTML scraping libraries are not required: this project uses the author's VADER implementation/package and the official YouTube API.
+Tested with **Python 3.14.5 on macOS ARM64**. The dependency versions are pinned in `requirements.txt`. NLTK and HTML scraping libraries are not required: this project uses the author's VADER implementation/package and the official YouTube API.
 
 From a terminal, enter this folder:
 
@@ -33,22 +32,13 @@ cd comp8240-vader-replication
 python3.14 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python src/evaluation/run_all_metrics.py
+python src/data_processing/fetch_public_data.py --dataset original_vader
+python src/evaluation/run_all_metrics.py --public-only
 ```
 
 If you are already inside this folder and its environment is installed, start with `source .venv/bin/activate`. Windows activation is `.venv\Scripts\activate`.
 
-The last command checks input hashes and mapping, runs both VADER versions on the original corpora and GoEmotions, verifies the initial sample and replacement draws, evaluates humans/LLMs/VADER on the same YouTube records, calculates 2,000-draw bootstrap intervals and paired comparisons, and generates metrics, LaTeX table fragments and figures.
-
-A Conda alternative is supplied:
-
-```sh
-conda env create -f environment.yml
-conda activate comp8240-vader-replication
-python src/evaluation/run_all_metrics.py
-```
-
-The isolated `venv` setup is the tested setup; the Conda specification is an alternative, not a claim that its solver was tested here. Keep the working directory at the repository root when installing the relative requirements file.
+The last command checks input hashes and mapping, runs both VADER versions on the original corpora and GoEmotions, calculates bootstrap intervals, and generates public metrics, LaTeX table fragments, and figures. Keep the working directory at the repository root when installing the relative requirements file.
 
 ## 3. Run one stage at a time
 
@@ -95,8 +85,6 @@ Key outputs:
 - `reports/public/cross_dataset_results.tex`, `reports/youtube/model_results.tex`;
 - `reports/youtube/figures/` with descriptive filenames, PNG at 300 dpi, SVG and a caption index.
 
-Historical source snapshots are in `docs/historical_source/` for inspection. They preserve old paths and are **not** the portable entry points. In particular, never rerun the historical SQLite replacement script against completed annotations.
-
 ## 4. LLM prompt, parsing and optional new API runs
 
 Your supplied shared prompt is preserved in `prompts/supplied_judge_prompt.md`. See `prompts/protocol.json` and `prompts/README.md` for what is known and missing.
@@ -114,11 +102,10 @@ python src/llm_judge/parse_responses.py \
 New runs are optional, potentially paid, and do not reproduce unknown historical settings. They are never invoked by `run_all_metrics.py`:
 
 ```sh
-python -m pip install -r requirements-llm.txt
 python src/llm_judge/run_judges.py --provider openai --model YOUR_EXACT_MODEL_ID --limit 1
 ```
 
-The command above is a **dry run**. To deliberately run a new experiment, securely export the relevant `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` or `GEMINI_API_KEY`, choose an actual supported model ID, and add `--execute`. Providers are `openai`, `anthropic`, `google`. Optional `--temperature` and `--system-prompt path` are logged; neither is guessed for the historical runs. `.env.example` documents variable names; scripts do not automatically read a filled `.env`.
+The command above is a **dry run**. To deliberately run a new experiment, securely export the relevant `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` or `GEMINI_API_KEY`, choose an actual supported model ID, and add `--execute`. Providers are `openai`, `anthropic`, `google`. Optional `--temperature` and `--system-prompt path` are logged; neither is guessed for the historical runs.
 
 Each request contains only the original text and sample ID, plus the shared rubric. Human scores and VADER/other-model predictions are never read by this runner. Each new run archives request JSON, raw provider response JSON, public response text, input/prompt hashes, model and parameter settings, failures and the parsed predictions under a separate `data/youtube/llm/new_runs/` directory. Failed/incomplete runs do not produce a purported complete prediction file. No live API functionality was needed for the offline analysis tests.
 

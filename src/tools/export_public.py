@@ -1,7 +1,7 @@
 """Create a publication-review folder using an explicit allowlist, never git add -f.
 
-No GitHub upload occurs. Private YouTube inputs, response logs, executed notebook
-outputs and source-specific reports are excluded, even if .gitignore changes.
+No GitHub upload occurs. Private YouTube inputs, response logs, notebooks, tests,
+internal documentation and source-specific reports are excluded, even if .gitignore changes.
 """
 from __future__ import annotations
 import argparse
@@ -11,8 +11,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
 from src.common import ROOT
 
-FILES=['README.md','environment.yml','requirements.txt','requirements-llm.txt','requirements-notebook.txt','requirements-lock.txt',
-       '.gitignore','.env.example','THIRD_PARTY_NOTICES.md']
+FILES=['README.md','requirements.txt','.gitignore','THIRD_PARTY_NOTICES.md']
 
 
 def run(destination):
@@ -24,7 +23,7 @@ def run(destination):
     for name in FILES:
         source=ROOT/name
         if source.is_file():shutil.copy2(source,destination/name)
-    for directory in ['src','config','prompts','tests','docs','data/goemotions','data/provenance','reports/public']:
+    for directory in ['src','config','prompts','data/goemotions','data/provenance','reports/public']:
         source=ROOT/directory
         if source.is_dir():shutil.copytree(source,destination/directory,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
     original=destination/'data/original_vader';original.mkdir(parents=True)
@@ -35,10 +34,6 @@ def run(destination):
     shutil.copy2(ROOT/'data/youtube/README.md',private/'README.md')
     if (ROOT/'data/README.md').is_file():
         shutil.copy2(ROOT/'data/README.md',destination/'data/README.md')
-    # Public notebook source contains the analysis but no saved text-bearing outputs.
-    notebook=ROOT/'notebooks/COMP8240_VADER_Final_Research_Evaluation.ipynb'
-    if notebook.is_file():
-        (destination/'notebooks').mkdir(exist_ok=True);shutil.copy2(notebook,destination/'notebooks'/notebook.name)
     paths=list(destination.rglob('*'))
     forbidden=['.env','local_credentials.json','annotations.db']
     if any(p.is_file() and p.name in forbidden for p in paths):raise AssertionError('Forbidden file in public export')
