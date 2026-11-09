@@ -1,0 +1,10 @@
+LLM,pattern,count
+ChatGPT,VADER wrong; LLM correct,57
+ChatGPT,VADER correct; LLM wrong,24
+ChatGPT,both wrong,43
+Claude,VADER wrong; LLM correct,61
+Claude,VADER correct; LLM wrong,21
+Claude,both wrong,39
+Gemini,VADER wrong; LLM correct,73
+Gemini,VADER correct; LLM wrong,23
+Gemini,both wrong,27

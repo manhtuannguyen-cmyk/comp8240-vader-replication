@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1170" viewBox="0 0 2000 1170" role="img" aria-labelledby="title desc">
+  <title id="title">New data creation and evaluation pipeline</title>
+  <desc id="desc">A black-and-white diagram showing separate GoEmotions and YouTube data pipelines. YouTube comments are collected through the YouTube Data API from four selected videos, processed, sampled, independently human annotated, and used alongside VADER and LLM outputs for evaluation.</desc>
+  <rect width="2000" height="1170" fill="white"/>
+  <style>
+    .box { fill: white; stroke: black; stroke-width: 3; }
+    .line { fill: none; stroke: black; stroke-width: 3; marker-end: url(#arrow); }
+    .heading { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: black; text-anchor: middle; }
+    .section { font-family: Arial, Helvetica, sans-serif; font-size: 27px; font-weight: 700; fill: black; text-anchor: middle; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 25px; fill: black; text-anchor: middle; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 20px; fill: black; text-anchor: middle; }
+    .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: black; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="black"/>
+    </marker>
+  </defs>
+
+  <text x="1000" y="55" class="heading">New Data Creation, Annotation and Evaluation Pipeline</text>
+  <text x="470" y="105" class="section">GoEmotions pathway</text>
+  <text x="1500" y="105" class="section">YouTube pathway</text>
+
+  <rect x="80" y="145" width="300" height="145" rx="8" class="box"/>
+  <text x="230" y="195" class="label">GoEmotions dataset</text>
+  <text x="230" y="227" class="small">54,263 agreement-filtered</text>
+  <text x="230" y="255" class="small">split records</text>
+
+  <rect x="500" y="145" width="300" height="145" rx="8" class="box"/>
+  <text x="650" y="188" class="label">Sentiment mapping</text>
+  <text x="650" y="220" class="small">map emotions to positive,</text>
+  <text x="650" y="248" class="small">negative or neutral</text>
+
+  <rect x="920" y="145" width="300" height="145" rx="8" class="box"/>
+  <text x="1070" y="190" class="label">Processed dataset</text>
+  <text x="1070" y="222" class="small">45,258 retained records</text>
+  <text x="1070" y="250" class="small">ambiguous records excluded</text>
+
+  <rect x="1330" y="125" width="300" height="190" rx="8" class="box"/>
+  <text x="1480" y="170" class="label">Selected YouTube videos</text>
+  <text x="1480" y="202" class="tiny">Comedy: Offensive Video Games</text>
+  <text x="1480" y="226" class="tiny">Gaming: Minecraft War</text>
+  <text x="1480" y="250" class="tiny">Lifestyle: day in the life</text>
+  <text x="1480" y="274" class="tiny">Pop culture: Unpopular</text>
+  <text x="1480" y="296" class="tiny">Social Medias</text>
+
+  <rect x="1330" y="350" width="300" height="150" rx="8" class="box"/>
+  <text x="1480" y="395" class="label">YouTube Data API</text>
+  <text x="1480" y="427" class="small">retrieve comments and</text>
+  <text x="1480" y="455" class="small">record collection metadata</text>
+
+  <rect x="1330" y="560" width="300" height="160" rx="8" class="box"/>
+  <text x="1480" y="600" class="label">Preprocessing</text>
+  <text x="1480" y="632" class="small">eligibility screening,</text>
+  <text x="1480" y="660" class="small">deduplication and cleaning</text>
+  <text x="1480" y="688" class="small">4,000-comment source frame</text>
+
+  <rect x="1330" y="780" width="300" height="145" rx="8" class="box"/>
+  <text x="1480" y="825" class="label">Final sample</text>
+  <text x="1480" y="857" class="small">quality-amended</text>
+  <text x="1480" y="885" class="small">200-comment cohort</text>
+
+  <rect x="850" y="780" width="300" height="145" rx="8" class="box"/>
+  <text x="1000" y="820" class="label">Human annotation</text>
+  <text x="1000" y="852" class="small">two independent annotators</text>
+  <text x="1000" y="880" class="small">sentiment intensity ratings</text>
+
+  <rect x="430" y="780" width="300" height="145" rx="8" class="box"/>
+  <text x="580" y="820" class="label">Human reference</text>
+  <text x="580" y="852" class="small">mean intensity and polarity</text>
+  <text x="580" y="880" class="small">agreement is reported</text>
+
+  <rect x="850" y="990" width="300" height="125" rx="8" class="box"/>
+  <text x="1000" y="1032" class="label">Model outputs</text>
+  <text x="1000" y="1064" class="small">VADER and LLM judges</text>
+  <text x="1000" y="1092" class="small">on the same 200 comments</text>
+
+  <rect x="1270" y="990" width="300" height="125" rx="8" class="box"/>
+  <text x="1420" y="1032" class="label">Evaluation and analysis</text>
+  <text x="1420" y="1064" class="small">agreement metrics, performance</text>
+  <text x="1420" y="1092" class="small">and disagreement analysis</text>
+
+  <path d="M380,217 H500" class="line"/>
+  <path d="M800,217 H920" class="line"/>
+  <path d="M1480,315 V350" class="line"/>
+  <path d="M1480,500 V560" class="line"/>
+  <path d="M1480,720 V780" class="line"/>
+  <path d="M1330,925 V950 H1000 V925" class="line"/>
+  <path d="M850,925 V950 H580 V925" class="line"/>
+  <path d="M1480,925 V1052 H1150" class="line"/>
+  <path d="M1150,1052 H1270" class="line"/>
+  <path d="M580,925 V1145 H1420 V1115" class="line"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">VADER replication and evaluation pipeline</title>
+  <desc id="desc">A black-and-white flow diagram from original VADER materials and new YouTube data, through processing and independent evaluation, to results and analysis.</desc>
+  <rect width="1600" height="760" fill="white"/>
+  <style>
+    .box { fill: white; stroke: black; stroke-width: 3; }
+    .line { fill: none; stroke: black; stroke-width: 3; marker-end: url(#arrow); }
+    .heading { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: black; text-anchor: middle; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: black; text-anchor: middle; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: black; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="black"/>
+    </marker>
+  </defs>
+
+  <text x="800" y="55" class="heading">VADER Replication and Evaluation Pipeline</text>
+
+  <rect x="70" y="125" width="290" height="120" rx="8" class="box"/>
+  <text x="215" y="172" class="label">Original VADER</text>
+  <text x="215" y="204" class="small">code and benchmark data</text>
+
+  <rect x="70" y="475" width="290" height="120" rx="8" class="box"/>
+  <text x="215" y="522" class="label">New datasets</text>
+  <text x="215" y="550" class="small">GoEmotions and</text>
+  <text x="215" y="576" class="small">YouTube comments</text>
+
+  <rect x="500" y="125" width="290" height="120" rx="8" class="box"/>
+  <text x="645" y="172" class="label">Replication</text>
+  <text x="645" y="204" class="small">run VADER on original data</text>
+
+  <rect x="500" y="475" width="290" height="120" rx="8" class="box"/>
+  <text x="645" y="522" class="label">Data processing</text>
+  <text x="645" y="554" class="small">clean, sample and prepare inputs</text>
+
+  <rect x="930" y="125" width="290" height="120" rx="8" class="box"/>
+  <text x="1075" y="172" class="label">Replication results</text>
+  <text x="1075" y="204" class="small">compare with original findings</text>
+
+  <rect x="930" y="475" width="290" height="120" rx="8" class="box"/>
+  <text x="1075" y="510" class="label">Independent evaluation</text>
+  <text x="1075" y="542" class="small">VADER, human annotation</text>
+  <text x="1075" y="570" class="small">and LLM judges</text>
+
+  <rect x="1320" y="300" width="220" height="120" rx="8" class="box"/>
+  <text x="1430" y="347" class="label">Results and</text>
+  <text x="1430" y="379" class="label">error analysis</text>
+
+  <path d="M360,185 H500" class="line"/>
+  <path d="M790,185 H930" class="line"/>
+  <path d="M360,535 H500" class="line"/>
+  <path d="M790,535 H930" class="line"/>
+  <path d="M1220,185 H1270 V340 H1320" class="line"/>
+  <path d="M1220,535 H1270 V380 H1320" class="line"/>
+</svg>

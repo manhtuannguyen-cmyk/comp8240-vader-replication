@@ -1,0 +1,77 @@
+{
+  "n": 200,
+  "accuracy": 0.835,
+  "macro_precision": 0.7777753763359522,
+  "macro_recall": 0.8058078011566384,
+  "macro_f1": 0.7900266274483895,
+  "weighted_f1": 0.8380418269244578,
+  "cohen_kappa": 0.6929518492672715,
+  "confusion_matrix": [
+    [
+      28,
+      3,
+      5
+    ],
+    [
+      3,
+      27,
+      5
+    ],
+    [
+      6,
+      11,
+      112
+    ]
+  ],
+  "per_class": {
+    "negative": {
+      "precision": 0.7567567567567568,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.7671232876712328,
+      "support": 36.0
+    },
+    "neutral": {
+      "precision": 0.6585365853658537,
+      "recall": 0.7714285714285715,
+      "f1-score": 0.7105263157894737,
+      "support": 35.0
+    },
+    "positive": {
+      "precision": 0.9180327868852459,
+      "recall": 0.8682170542635659,
+      "f1-score": 0.8924302788844621,
+      "support": 129.0
+    }
+  },
+  "pearson_r": 0.793536116495371,
+  "spearman_rho": 0.7924924065655993,
+  "mae": 0.20125,
+  "rmse": 0.30465144017384854,
+  "ccc": 0.7906504638114303,
+  "quadratic_weighted_kappa": 0.7906504638114303,
+  "linear_weighted_kappa": 0.6139273895736415,
+  "exact_intensity_agreement": 0.435,
+  "raw_intensity_mae": 0.805,
+  "polarity_disagreements": 33,
+  "accuracy_ci_low": 0.785,
+  "accuracy_ci_high": 0.885,
+  "accuracy_degenerate_draws": 0,
+  "macro_f1_ci_low": 0.7220992642068209,
+  "macro_f1_ci_high": 0.8522351172553537,
+  "macro_f1_degenerate_draws": 0,
+  "cohen_kappa_ci_low": 0.5966272788146476,
+  "cohen_kappa_ci_high": 0.7859085136467093,
+  "cohen_kappa_degenerate_draws": 0,
+  "pearson_r_ci_low": 0.7240841721890777,
+  "pearson_r_ci_high": 0.846731181323077,
+  "pearson_r_degenerate_draws": 0,
+  "ccc_ci_low": 0.7187607215350492,
+  "ccc_ci_high": 0.8444944491636175,
+  "ccc_degenerate_draws": 0,
+  "mae_ci_low": 0.17,
+  "mae_ci_high": 0.2325,
+  "mae_degenerate_draws": 0,
+  "quadratic_weighted_kappa_ci_low": 0.718760721535049,
+  "quadratic_weighted_kappa_ci_high": 0.8444944491636176,
+  "quadratic_weighted_kappa_degenerate_draws": 0
+}

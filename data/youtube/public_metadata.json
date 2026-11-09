@@ -1,0 +1,22 @@
+{
+  "access": "restricted",
+  "study_stream": "YouTube sentiment evaluation",
+  "source_frame_size": 4000,
+  "final_cohort_size": 200,
+  "human_annotators": 2,
+  "saved_llm_judges": 3,
+  "sentiment_scale": "integer -4 to +4",
+  "public_contents": [
+    "aggregate metrics",
+    "de-identified figures",
+    "reproducible code and configuration"
+  ],
+  "excluded_from_public_repository": [
+    "comment text",
+    "comment identifiers",
+    "video identifiers and titles",
+    "publication and collection timestamps",
+    "annotator-level records",
+    "item-level model predictions and justifications"
+  ]
+}
