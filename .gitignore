@@ -37,6 +37,25 @@ Thumbs.db
 tmp/
 .tmp/
 
+# Access-restricted research inputs and item-level evaluation outputs
+/data/youtube/**
+!/data/youtube/public_metadata.json
+/reports/youtube/**
+!/reports/youtube/figures/
+!/reports/youtube/figures/**
+!/reports/youtube/cross_dataset_metrics.csv
+!/reports/youtube/domain_metrics.csv
+!/reports/youtube/error_patterns.csv
+!/reports/youtube/human_agreement.json
+!/reports/youtube/individual_human_comparison.csv
+!/reports/youtube/model_metrics.csv
+!/reports/youtube/model_metrics.json
+!/reports/youtube/model_results.tex
+!/reports/youtube/pairwise_agreement.csv
+!/reports/youtube/paired_comparisons.csv
+!/reports/youtube/per_class_metrics.csv
+!/reports/youtube/reference_sensitivity.csv
+
 # Original third-party evaluation text: fetch from pinned authors' release
 /data/original_vader/*GroundTruth.txt
 /data/original_vader/*anonDataRatings.txt
